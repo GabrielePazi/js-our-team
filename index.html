@@ -11,71 +11,81 @@
 
   <div class="container-fluid">
     <div class="row justify-content-center">
-      <div class="col-8">
+      <div class="col-8 my-3">
 
         <h1 class="text-center mb-3">Our Team</h1>
 
-        <div class="row g-3">
-          <!-- prima riga -->
-          <div class="col-12 d-flex justify-content-center gap-3">
-            <!-- card 1 -->
-            <div id="card-1" class="card" style="width: 18rem;">
-              <img src="" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title text-center">Card title</h5>
-                <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-
-            <!-- card 2 -->
-            <div class="card" style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title text-center">Card title</h5>
-                <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-
-            <!-- card 3 -->
-            <div class="card" style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title text-center">Card title</h5>
-                <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
+        <div class="row cards-row gap-3">
+          <!-- card 1 -->
+          <div class="card p-0" style="width: calc(33.3% - 1rem);">
+            <img src="" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center"></h5>
+              <p class="card-text text-center"></p>
             </div>
           </div>
 
-          <!-- seconda riga -->
-          <div class="col-12 d-flex justify-content-center gap-3">
-            <!-- card 4 -->
-            <div class="card" style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title text-center">Card title</h5>
-                <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
+          <!-- card 2 -->
+          <div class="card p-0" style="width: calc(33.3% - 1rem);">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center"></h5>
+              <p class="card-text text-center"></p>
             </div>
+          </div>
 
-            <!-- card 5 -->
-            <div class="card" style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title text-center">Card title</h5>
-                <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
+          <!-- card 3 -->
+          <div class="card p-0" style="width: calc(33.3% - 1rem);">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center"></h5>
+              <p class="card-text text-center"></p>
             </div>
+          </div>
 
-            <!-- card 6 -->
-            <div class="card" style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title text-center">Card title</h5>
-                <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
+          <!-- card 4 -->
+          <div class="card p-0" style="width: calc(33.3% - 1rem);">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center"></h5>
+              <p class="card-text text-center"></p>
+            </div>
+          </div>
+
+          <!-- card 5 -->
+          <div class="card p-0" style="width: calc(33.3% - 1rem);">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center"></h5>
+              <p class="card-text text-center"></p>
+            </div>
+          </div>
+
+          <!-- card 6 -->
+          <div class="card last-card p-0" style="width: calc(33.3% - 1rem);">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center text-capitalize"></h5>
+              <p class="card-text text-center text-capitalize"></p>
             </div>
           </div>
         </div>
+        <!-- sezione per aggiungere membro -->
+        <h2 class="mt-4">Aggiungi Membro</h2>
+
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Name</label>
+          <input class="form-control new-member-name" id="exampleFormControlInput1" placeholder="Mario Rossi">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Occupation</label>
+          <input class="form-control new-member-job" id="exampleFormControlInput1" placeholder="CEO">
+        </div>
+        <div class="mb-3">
+          <label for="floatingInputDisabled">Profile Picture</label>
+          <input class="form-control" id="floatingInputDisabled" placeholder="Random Generated Image" disabled>
+        </div>
+        <button type="button" class="btn bg-success add-member-btn text-light">Add Member</button>      
       </div>
     </div>
   </div>
