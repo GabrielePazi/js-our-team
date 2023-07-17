@@ -100,16 +100,14 @@ function createMember(memberName, job, image) {
 }
 
 /**
- * Clona l'ultima card e aggiunge il clone al container. Toglie la classe "last-card alla penultima carde l'aggiunge a quella appena creata"
- * @returns 
+ * crea una nuova card in html 
  */
 function createNewCard() {
-  const cardEl = document.querySelector(".last-card");
-  const newCard = cardEl.cloneNode(true);
-
-  cardContainer.append(newCard);
-
-  cardEl.classList.remove("last-card");
-  newCard.classList.add("last-card");
-  return
+  cardContainer.innerHTML += `<div class="card p-0" style="width: calc(33.3% - 1rem);">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title text-center text-capitalize"></h5>
+    <p class="card-text text-center text-capitalize"></p>
+  </div>
+</div>`
 }
